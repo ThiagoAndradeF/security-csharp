@@ -1,4 +1,5 @@
-﻿using webSecurityCsharp.Entitys;
+﻿using System.IdentityModel.Tokens.Jwt;
+using webSecurityCsharp.Entitys;
 namespace webSecurityCsharp.Security
 {
     public class AuthentificationService()
@@ -7,7 +8,11 @@ namespace webSecurityCsharp.Security
 
     private string GenerateJwtToken(User user)
     {
-        var tokenHandler = new 
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Enconding.UTF8.Get
+
+
+
     }
 
 
